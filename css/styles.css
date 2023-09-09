@@ -58,11 +58,12 @@ button{ padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;}
     
-
+.mySkills{
+    text-align: center;
+}
 .flexContainer {
     display: flex;
     flex-direction: row;
-    padding: 4px;
     border: red solid ;
 }
 
