@@ -111,4 +111,22 @@ footer ul{
     margin: auto;
 }
 
-@media only screen and (max-width:600)
+@media only screen and (max-width:600px){
+    body{background-color: aqua;}
+    .workGrid{
+        display:grid;
+        grid-template-rows: 150px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'photo1' 
+        'description1'
+        'photo2'
+        'description2'
+        'photo3'
+        'description3' ;
+        gap: 25px;
+        text-align: center;}
+.description1{grid-area: description1;text-align: center;}
+.description2{grid-area: description2;text-align: center;}
+.description3{grid-area: description3;text-align: center;}
+}
