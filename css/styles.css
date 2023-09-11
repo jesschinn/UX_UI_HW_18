@@ -18,12 +18,13 @@
 nav{
     width: 73%;
     padding: .5%;
-    background-color: aqua;
+
 }
 
 ul{
-    width: 80%;
+    width:80%;
     margin-left: auto;
+    text-align: right;
 }
 
 li{
@@ -64,15 +65,18 @@ button{ padding: 5px;
 .flexContainer {
     display: flex;
     flex-direction: row;
-    border: red solid ;
 }
 
 .flexItem{
-    background-color: pink;
     width: 33%;
     margin: 10px;
     padding: 10px;
 }
+
+.flexItems img{
+    display: block;
+    max-width:33%;
+    overflow: hidden;}
 
 .myWork{
     text-align: center;
@@ -82,33 +86,41 @@ button{ padding: 5px;
 
 .workGrid{
     display:grid;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     'photo1 description1'
     'photo2 description2'
     'photo3 description3' ;
     gap: 25px;
-
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .photo1{grid-area: photo1;}
 .photo2{grid-area: photo2;}
 .photo3{grid-area: photo3;}
 
-.description1{grid-area: description1;text-align: left;}
+.description1{grid-area: description1;text-align: left;
+}
 .description2{grid-area: description2;text-align: left;}
 .description3{grid-area: description3;text-align: left;}
+
+.myWork h3{
+    padding: 50px;
+}
 
 footer{
     background-color: #E970DD;
     margin:center;
     text-align: center;
+    padding: 0;
 }
 
 footer ul{
     text-align: center;
     margin: auto;
+    padding: 0;
 }
 
 @media only screen and (max-width:600px){
@@ -129,4 +141,5 @@ footer ul{
 .description1{grid-area: description1;text-align: center;}
 .description2{grid-area: description2;text-align: center;}
 .description3{grid-area: description3;text-align: center;}
+
 }
